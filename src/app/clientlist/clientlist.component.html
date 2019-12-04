@@ -1,27 +1,33 @@
-
-
-        
-
-    <body>
+<body>
     <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">TCMS </a>
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">TCMS </a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="client.html">Client</a>
+                </li>
+                <li>
+                    <a href="Project.html">Project</a>
+                </li>
+                <li>
+                    <a href="customer.html">Customer </a>
+                </li>
+            </ul>
         </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="client.html">Client</a> </li>
-          <li><a href="Project.html">Project</a> </li>
-          <li><a href="customer.html">Customer </a></li>
-        </ul>
-      </div>
-      
+
     </nav>
-    
-    <h1 style="color:black"><b>These are Our cherished Clients</b></h1>
+
+    <h1 style="color:black">
+        <b>These are Our cherished Clients</b>
+    </h1>
     <table class="table table-striped">
-    <thead>
-        <tr>
+        <thead>
+            <tr>
                 <th scope="col">ID</th>
                 <th scope="col">First Name</th>
                 <th scope="col">Last Name</th>
@@ -31,32 +37,33 @@
             </tr>
         </thead>
         <tbody>
-          <tr>
+            <tr *ngFor="let item of retrievedclient">
             <th scope="row">1</th>
-            <td>Bill</td>
-            <td>Ali</td>
+            <td>{{item.name}}</td>
+            <!-- <td>Ali</td>
             <td>Accra</td>
             <td>bill@gmail.com</td>
-            <td>Platinum</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Ali</td>
-          <td>East Legon</td>
-          <td>man@gmail.com</td>
-          <td>Gold</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>OSU</td>
-           <td>theBird@yahoo.com</td>
-           <td>Platinum</td>
-        </tr>
-    </tbody>
-   </table>
-   </body>
-   
-    
+            <td>Platinum</td> -->
+            </tr>
+            <!-- <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Ali</td>
+                <td>East Legon</td>
+                <td>man@gmail.com</td>
+                <td>Gold</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>OSU</td>
+                <td>theBird@yahoo.com</td>
+                <td>Platinum</td>
+            </tr> -->
+        </tbody>
+    </table>
+</body>
+
+
+<!-- s -->
