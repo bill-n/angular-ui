@@ -10,6 +10,7 @@ import { ClientlistComponent } from './clientlist/clientlist.component';
 
 
 const routes: Routes = [
+  {path:'',redirectTo:'/home',pathMatch:'full'},
   {path: 'client', component:ClientpageComponent},
   {path:'home', component:HomeComponent},
   {path:'footer', component:FooterComponent},
