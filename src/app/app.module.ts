@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { ClientpageComponent } from './clientpage/clientpage.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { AddclientComponent } from './addclient/addclient.component';
 import { ClientlistComponent } from './clientlist/clientlist.component';
+// import { ClientserviceComponent } from './clientservice/clientservice.component';
 
 
 
@@ -16,10 +18,11 @@ import { ClientlistComponent } from './clientlist/clientlist.component';
     ClientpageComponent,
     HomeComponent,
     FooterComponent,
-    ClientlistComponent 
+    AddclientComponent,
+    ClientlistComponent,
+    // ClientserviceComponent,
     
-   
-  ],
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule
