@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ClientserviceService } from '../clientservice.service';
+import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
+import { Client } from '../clients';
 
 @Component({
   selector: 'app-clientlist',
@@ -7,30 +11,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientlistComponent implements OnInit {
 
-  constructor() { }
+  constructor(  private clientservice: ClientserviceService,
+    private router: Router) { }
+    clientObservable: Observable<Client[]>;
+    retrievedClients: Array<Client> = [];
 
-  ngOnInit() {
-  }
-  retrievedclient =[
-    {
-    
-    name: "bill",
-    phone: "0234888288484",
-    email: "yahoo@gmail.com",
-    address: "legon"
-    },
-    {
-    name: "ali",
-    phone: "0275410383",
-    email: "bill@gmail.com",
-    address:"achimota"
-    },
-    {
-      name: "mill",
-      phone: "0275410383",
-      email: "bill@gmail.com",
-      address:"lapaz"
-      },
-  ]
+    ngOnInit() {
+      this.clientservice.getClients().subscribe(clients => {
+         this.retrievedClients = clients;
+        
+          });
+    }
+ 
 
 }

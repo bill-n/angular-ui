@@ -13,17 +13,22 @@ export class AddclientComponent  {
   profileForm = new FormGroup({
     Fname: new FormControl(''),
     Address: new FormControl(''),
-    Project_Description: new FormControl(''),
+  
     City: new FormControl(''),
-    Phone_Number: new FormControl('')
+    Telephone: new FormControl('')
   
   
   })
 
 
   constructor() { }
+  onSubmit() {
+    // TODO: Use EventEmitter with form value
+    console.warn(this.profileForm.value);
+  }
 
   ngOnInit() {
+    
     
   }
 

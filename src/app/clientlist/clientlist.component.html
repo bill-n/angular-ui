@@ -26,17 +26,18 @@
     <table class="table table-striped">
         <thead>
             <tr>
-             
-                <th scope="col">Name</th>
-                <th scope="col">Phone</th>
-                <th scope="col">Email</th>
-                <th scope="col">Address</th>
-               
-            </tr>
+                    <th scope="col">#</th>
+                    <th scope="col">NAME</th>
+                    <th scope="col">EMAIL</th>
+                    <th scope="col">TELEPHONE</th>
+                    <th scope="col">ADDRESS</th>
+              </tr>
         </thead>
+        
         <tbody>
-            <tr *ngFor="let item of retrievedclient">
-          
+            <!-- <tr *ngFor="let item of retrievedclient"> -->
+        <tr *ngFor="let item of retrievedClients; let serial = index; let evenClient = even; let oddClient = odd" [ngClass]="{even: evenClient, odd: oddClient}"> 
+        <td>{{serial + 1}}</td>
             <td>{{item.name}}</td>
             <td>{{item.phone}}</td> 
             <td>{{item.email}}</td>
