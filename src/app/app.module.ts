@@ -24,12 +24,14 @@ import { ClientdetailsComponent } from './clientdetails/clientdetails.component'
     ClientlistComponent,
     ClientdetailsComponent,
     // ClientserviceComponent,
+   
     
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    
     
   ],
   providers: [],
