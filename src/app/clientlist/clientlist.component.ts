@@ -15,8 +15,8 @@ export class ClientlistComponent implements OnInit {
     {
     
     name: "bill",
-    phone: "02444444",
-    email: "bill@gmail.com",
+    phone: "0234888288484",
+    email: "yahoo@gmail.com",
     address: "legon"
     },
     {

@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { AddclientComponent } from './addclient/addclient.component';
 import { ClientlistComponent } from './clientlist/clientlist.component';
+import { ClientdetailsComponent } from './clientdetails/clientdetails.component';
 
 // import { ClientserviceComponent } from './clientservice/clientservice.component';
 
@@ -21,6 +22,7 @@ import { ClientlistComponent } from './clientlist/clientlist.component';
     FooterComponent,
     AddclientComponent,
     ClientlistComponent,
+    ClientdetailsComponent,
     // ClientserviceComponent,
     
     ],
